@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Bottombaritemone"
+        android:icon="@drawable/p0000"
+        android:title="People">
+
+    </item>
+    <item
+        android:id="@+id/Bottombaritemone1"
+        android:icon="@drawable/p0000"
+        android:title="People">
+
+    </item>
+    <item
+        android:id="@+id/Bottombaritemone2"
+        android:icon="@drawable/p0000"
+        android:title="People">
+
+    </item>
+    <item
+        android:id="@+id/Bottombaritemone3"
+        android:icon="@drawable/p0000"
+        android:title="People">
+
+    </item>
+    <item
+        android:id="@+id/Bottombaritemone4"
+        android:icon="@drawable/p0000"
+        android:title="People">
+
+    </item>
+
+</menu>
