@@ -16,7 +16,9 @@ import android.widget.VideoView;
 
 import com.example.nattapong.heartdisease.R;
 import com.example.nattapong.heartdisease.adapter.ViewPagerAdapter;
+import com.example.nattapong.heartdisease.fragment.ExerciseFragment;
 import com.example.nattapong.heartdisease.fragment.FragmentComment;
+import com.example.nattapong.heartdisease.fragment.FragmentFood;
 import com.example.nattapong.heartdisease.fragment.FragmentHomeHeart;
 import com.example.nattapong.heartdisease.fragment.FragmentMap;
 import com.example.nattapong.heartdisease.fragment.FragmentMapHospital;
@@ -48,6 +50,7 @@ public class MainActivity extends AppCompatActivity  {
         viewPager = (ViewPager) findViewById(R.id.viewPager);
         viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
         viewPagerAdapter.addFragments(new FragmentHomeHeart(), "ประเภทโรคหัวใจ");
+        viewPagerAdapter.addFragments(new FragmentTell(), "แนะนำ");
         viewPagerAdapter.addFragments(new FragmentComment(), "ปรึกษาแพทย์");
         viewPagerAdapter.addFragments(new FragmentMapHospital(), "ศูนย์โรคหัวใจ");
         viewPager.setAdapter(viewPagerAdapter);

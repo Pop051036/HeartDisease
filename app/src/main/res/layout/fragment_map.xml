@@ -2,31 +2,106 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#BBDEFB">
 
     <fragment
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="356dp"
-        tools:context="com.example.mapwithmarker.MapsMarkerActivity"/>
+        android:layout_height="300dp" >
+    </fragment>
 
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tvDistance1"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginStart="15dp"
+                    android:text="ระยะทาง"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvDistance"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="000"
+                    android:layout_marginStart="80dp"
+                    android:background="#ECEFF1"/>
+                <TextView
+                    android:id="@+id/tvTime1"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginStart="150dp"
+                    android:text="เวลา :"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="0.00"
+                    android:layout_marginStart="187dp"
+                    android:background="#ECEFF1"/>
+
+            </RelativeLayout>
+        </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_marginBottom="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="15dp"
+        android:id="@+id/addressHospital1"
+        android:text="สถานที่ตั้ง"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
         android:id="@+id/addressHospital"
+        android:background="#ECEFF1"
         android:text="asdasdasdasdasdasdasdasd"
         android:layout_height="wrap_content" />
 
+    <TextView
+        android:id="@+id/hospitalDescription1"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="ข้อมูล"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <TextView
         android:id="@+id/hospitalDescription"
         android:layout_width="match_parent"
         android:layout_marginBottom="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:background="#ECEFF1"
+        android:layout_marginTop="0dp"
         android:text="asdasdasdasdasdasdasdasd"
         android:layout_height="wrap_content" />
+    </ScrollView>
 </LinearLayout>

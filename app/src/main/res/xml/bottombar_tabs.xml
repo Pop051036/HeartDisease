@@ -20,14 +20,5 @@
         icon="@drawable/p006"
         title="การรักษา"
         barColorWhenSelected="#2196F3" />
-    <tab
-        id="@+id/tab_friends"
-        icon="@drawable/p002"
-        title="อาหาร"
-        barColorWhenSelected="#2196F3" />
-    <tab
-        id="@+id/tab_food"
-        icon="@drawable/p005"
-        title="ออกกำลังกาย"
-        barColorWhenSelected="#2196F3" />
+
 </tabs>

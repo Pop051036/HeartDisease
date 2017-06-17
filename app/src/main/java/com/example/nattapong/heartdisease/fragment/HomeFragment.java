@@ -4,6 +4,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -34,6 +37,7 @@ import retrofit2.Response;
 public class HomeFragment extends Fragment implements View.OnClickListener {
 
 
+    ViewPager viewPager;
 
     public HomeFragment() {
         super();
@@ -73,14 +77,36 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     private void initInstances(View rootView, Bundle savedInstanceState) {
         // Init 'View' instance(s) with rootView.findViewById here
 
+
         VideoView videoview = (VideoView) rootView.findViewById(R.id.videoView);
 
-        Uri uri = Uri.parse("android.resource://" + getActivity().getPackageName() + "/" + R.raw.pop);
+        Uri uri = Uri.parse("android.resource://" + getActivity().getPackageName() + "/" + R.raw.r01 );
 
         videoview.setVideoURI(uri);
         videoview.setMediaController(new MediaController(getContext()));
         videoview.start();
 
+        viewPager = (ViewPager) rootView.findViewById(R.id.viewPager);
+        viewPager.setAdapter(new FragmentStatePagerAdapter(getChildFragmentManager()) {
+            @Override
+            public Fragment getItem(int position) {
+                switch (position){
+                    case 0:
+                        return HomeFragment.newInstance();
+                    case 1:
+                        return FragmentHomeAtheyOne.newInstance();
+                    case 2:
+                        return FragmentHomeAtheyTow.newInstance();
+                    default:
+                        return null;
+                }
+            }
+
+            @Override
+            public int getCount() {
+                return 3;
+            }
+        });
 
     }
 

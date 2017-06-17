@@ -39,8 +39,11 @@ public class AtherosclerosisActivity extends AppCompatActivity {
 
         toolbar = (Toolbar) findViewById(R.id.toolBar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("โรคหลอดเลือดหัวใจ");
+            getSupportActionBar().setHomeButtonEnabled(true);
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
 
         BottomBar bottomBar = (BottomBar) findViewById(R.id.bottomBar);
         bottomBar.setOnTabSelectListener(new OnTabSelectListener() {
@@ -91,28 +94,28 @@ public class AtherosclerosisActivity extends AppCompatActivity {
                             .commit();
 
                 }
-                if (tabId == R.id.tab_friends){
-                    getSupportFragmentManager().beginTransaction()
-                            .replace(R.id.contentContainer, FragmentFoodAthey.newInstance())
-                            .setCustomAnimations(
-                                    R.anim.from_right, R.anim.to_left,
-                                    R.anim.from_left, R.anim.to_right
-                            )
-                            .addToBackStack(null)
-                            .commit();
+                //if (tabId == R.id.tab_friends){
+                //   getSupportFragmentManager().beginTransaction()
+                //            .replace(R.id.contentContainer, FragmentFoodAthey.newInstance())
+                //            .setCustomAnimations(
+                //                    R.anim.from_right, R.anim.to_left,
+                //                    R.anim.from_left, R.anim.to_right
+                //            )
+                //            .addToBackStack(null)
+                //            .commit();
 
-                }
-                if (tabId == R.id.tab_food){
-                    getSupportFragmentManager().beginTransaction()
-                            .replace(R.id.contentContainer, ExerciseFragment.newInstance())
-                            .setCustomAnimations(
-                                    R.anim.from_right, R.anim.to_left,
-                                    R.anim.from_left, R.anim.to_right
-                            )
-                            .addToBackStack(null)
-                            .commit();
+                //}
+                //if (tabId == R.id.tab_food){
+                //    getSupportFragmentManager().beginTransaction()
+                //            .replace(R.id.contentContainer, ExerciseFragment.newInstance())
+                //            .setCustomAnimations(
+                //                    R.anim.from_right, R.anim.to_left,
+                //                    R.anim.from_left, R.anim.to_right
+                //            )
+                //            .addToBackStack(null)
+                //            .commit();
 
-                }
+                //}
 
             }
         });

@@ -15,11 +15,13 @@
         android:clickable="true"
         android:foreground="?android:attr/selectableItemBackground"
         card_view:cardCornerRadius="6dp"
-        card_view:cardElevation="2dp">
+        card_view:cardElevation="2dp"
+        >
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#CFD8DC">
 
             <RelativeLayout
                 android:id="@+id/r1"
@@ -28,14 +30,23 @@
                 android:gravity="center_vertical"
                 android:padding="1dp">
 
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/b1" />
+
                 <TextView
                     android:id="@+id/cmUser"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/userName"
-
+                    android:layout_below="@+id/userDate"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginStart="6dp"
                     android:text="rrrrrrrrrrrrrrrrrr"
                     android:textSize="16sp" />
+
 
                 <TextView
                     android:id="@+id/userDate"
@@ -43,13 +54,17 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:text="2017-01-13 12:22"
+                    android:layout_marginEnd="8dp"
                     android:textSize="16sp" />
+
+
 
                 <TextView
                     android:id="@+id/userName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="pop"
+                    android:layout_marginStart="60dp"
                     android:textSize="16sp"
                     android:textStyle="bold" />
             </RelativeLayout>
@@ -60,10 +75,16 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/r1"
                 android:layout_marginBottom="8dp"
-                android:layout_marginStart="50dp"
                 android:layout_marginTop="0dp"
                 android:gravity="center_vertical"
                 android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/img12"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/pop01" />
 
                 <TextView
                     android:id="@+id/cmAdmin"
@@ -71,6 +92,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/adminDate"
                     android:text="rrrrrrrrrrrrrrrrrr"
+                    android:layout_marginTop="35dp"
                     android:textColor="#ff0000"
                     android:textSize="16sp" />
 
@@ -80,6 +102,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:text="2017-01-13 12:22"
+                    android:layout_marginEnd="0dp"
                     android:textSize="16sp" />
 
 
@@ -90,8 +113,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/r2"
-                android:layout_marginBottom="8dp"
-                android:layout_marginStart="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="0dp"
                 android:gravity="center_vertical"
                 android:padding="0dp">
@@ -102,7 +125,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="#ff0000"
-                    android:textSize="16sp" />
+                    android:background="#FFFFFF"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="5dp"/>
 
                 <TextView
                     android:id="@+id/btnCommentP"
@@ -111,11 +136,13 @@
                     android:layout_alignParentEnd="true"
                     android:layout_below="@+id/edcmAdmin"
                     android:text="บันทึกความคิดเห็น"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
                     android:textSize="16sp"
                     android:textStyle="bold" />
             </RelativeLayout>
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>
-     
+
 </RelativeLayout>

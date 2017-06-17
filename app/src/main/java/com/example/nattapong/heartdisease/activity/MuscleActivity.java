@@ -32,8 +32,11 @@ public class MuscleActivity extends AppCompatActivity {
     private void initInstsnces() {
         toolbar = (Toolbar) findViewById(R.id.toolBar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("โรคกล้ามเนื้อหัวใจ");
+            getSupportActionBar().setHomeButtonEnabled(true);
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
 
 
         BottomBar bottomBar1 = (BottomBar) findViewById(R.id.bottomBar1);
@@ -85,28 +88,28 @@ public class MuscleActivity extends AppCompatActivity {
                             .commit();
 
                 }
-                if (tabId == R.id.tab_friends){
-                    getSupportFragmentManager().beginTransaction()
-                            .replace(R.id.contentContainerMuscle, FoodMuscleFragment.newInstance())
-                            .setCustomAnimations(
-                                    R.anim.from_right, R.anim.to_left,
-                                    R.anim.from_left, R.anim.to_right
-                            )
-                            .addToBackStack(null)
-                            .commit();
+                //if (tabId == R.id.tab_friends){
+                //    getSupportFragmentManager().beginTransaction()
+                //            .replace(R.id.contentContainerMuscle, FoodMuscleFragment.newInstance())
+                //            .setCustomAnimations(
+                //                    R.anim.from_right, R.anim.to_left,
+                //                    R.anim.from_left, R.anim.to_right
+                //            )
+                //            .addToBackStack(null)
+                //            .commit();
 
-                }
-                if (tabId == R.id.tab_food){
-                    getSupportFragmentManager().beginTransaction()
-                            .replace(R.id.contentContainerMuscle, ExerciseMuscleFragment.newInstance())
-                            .setCustomAnimations(
-                                    R.anim.from_right, R.anim.to_left,
-                                    R.anim.from_left, R.anim.to_right
-                            )
-                            .addToBackStack(null)
-                            .commit();
+                //}
+                //if (tabId == R.id.tab_food){
+                //    getSupportFragmentManager().beginTransaction()
+                //            .replace(R.id.contentContainerMuscle, ExerciseMuscleFragment.newInstance())
+                //            .setCustomAnimations(
+                //                    R.anim.from_right, R.anim.to_left,
+                //                    R.anim.from_left, R.anim.to_right
+                //            )
+                //            .addToBackStack(null)
+                //            .commit();
 
-                }
+                //}
             }
         });
     }

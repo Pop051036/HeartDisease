@@ -3,6 +3,7 @@ package com.example.nattapong.heartdisease.manager.http;
 import com.example.nattapong.heartdisease.dao.CommentCollDataDao;
 import com.example.nattapong.heartdisease.dao.CommentInsertDao;
 import com.example.nattapong.heartdisease.dao.MapHospitalDataCollection;
+import com.example.nattapong.heartdisease.dao.SampleDataCollection;
 import com.example.nattapong.heartdisease.dao.UserDataLoginCollectionDao;
 
 import retrofit2.Call;
@@ -44,9 +45,17 @@ public interface ApiService {
     @GET("user/get/map")
     Call<MapHospitalDataCollection> loadMapHospital();
 
-    @FormUrlEncoded
+    @GET("user/get/sample")
+    Call<SampleDataCollection> loadSample();
+
+       @FormUrlEncoded
     @POST("user/comment")
     Call<CommentCollDataDao> commentadmin (@Field("comment_id") int commentId,
-                                        @Field("comment_admin_id") int commentAdminId,
-                                        @Field("comment_admin_text") String commentAdminText);
+                                           @Field("comment_admin_id") int commentAdminId,
+                                           @Field("comment_admin_text") String commentAdminText);
+    @FormUrlEncoded
+    @POST("user/get/distance/hospital")
+    Call<MapHospitalDataCollection> getHospitalShort (@Field("lat") String lat,
+                                           @Field("lng") String lng) ;
+
 }

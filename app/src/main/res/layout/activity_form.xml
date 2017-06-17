@@ -22,7 +22,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="แบบประเมินความเสี่ยง"
+                android:text="แบบทดสอบความรู้"
                 android:textSize="20dp"
                 android:textColor="#D50000"/>
 
@@ -47,17 +47,28 @@
             android:textSize="16dp"/>
         <RadioGroup
             android:id="@+id/g1"
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <RadioButton
-                android:id="@+id/y1"
+                android:id="@+id/y11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#000000"
                 android:text="ใช่"/>
             <RadioButton
-                android:id="@+id/n1"
+                android:id="@+id/y21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="ไม่ใช่"/>
+            <RadioButton
+                android:id="@+id/y31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="ใช่"/>
+            <RadioButton
+                android:id="@+id/y41"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#000000"
@@ -80,12 +91,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <RadioButton
-                android:id="@+id/y2"
+                android:id="@+id/y12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ใช่"/>
             <RadioButton
-                android:id="@+id/n2"
+                android:id="@+id/y22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ไม่ใช่"/>
+            <RadioButton
+                android:id="@+id/y32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ใช่"/>
+            <RadioButton
+                android:id="@+id/y42"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ไม่ใช่"/>
@@ -107,12 +128,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <RadioButton
-                android:id="@+id/y3"
+                android:id="@+id/y13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ใช่"/>
             <RadioButton
-                android:id="@+id/n3"
+                android:id="@+id/y23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ไม่ใช่"/>
+            <RadioButton
+                android:id="@+id/y33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ใช่"/>
+            <RadioButton
+                android:id="@+id/y43"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ไม่ใช่"/>
@@ -134,12 +165,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <RadioButton
-                android:id="@+id/y4"
+                android:id="@+id/y14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ใช่"/>
             <RadioButton
-                android:id="@+id/n4"
+                android:id="@+id/y24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ไม่ใช่"/>
+            <RadioButton
+                android:id="@+id/y34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ใช่"/>
+            <RadioButton
+                android:id="@+id/y44"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ไม่ใช่"/>
@@ -161,12 +202,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <RadioButton
-                android:id="@+id/y5"
+                android:id="@+id/y15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ใช่"/>
             <RadioButton
-                android:id="@+id/n5"
+                android:id="@+id/y25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ไม่ใช่"/>
+            <RadioButton
+                android:id="@+id/y35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ใช่"/>
+            <RadioButton
+                android:id="@+id/y45"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ไม่ใช่"/>
@@ -188,12 +239,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <RadioButton
-                android:id="@+id/y6"
+                android:id="@+id/y16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ใช่"/>
             <RadioButton
-                android:id="@+id/n6"
+                android:id="@+id/y26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ไม่ใช่"/>
+            <RadioButton
+                android:id="@+id/y36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ใช่"/>
+            <RadioButton
+                android:id="@+id/y46"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ไม่ใช่"/>
@@ -216,12 +277,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <RadioButton
-                android:id="@+id/y7"
+                android:id="@+id/y17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ใช่"/>
             <RadioButton
-                android:id="@+id/n7"
+                android:id="@+id/y27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ไม่ใช่"/>
+            <RadioButton
+                android:id="@+id/y37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ใช่"/>
+            <RadioButton
+                android:id="@+id/y47"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ไม่ใช่"/>
@@ -243,12 +314,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <RadioButton
-                android:id="@+id/y8"
+                android:id="@+id/y18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ใช่"/>
             <RadioButton
-                android:id="@+id/n8"
+                android:id="@+id/y28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ไม่ใช่"/>
+            <RadioButton
+                android:id="@+id/y38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ใช่"/>
+            <RadioButton
+                android:id="@+id/y48"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ไม่ใช่"/>
@@ -270,12 +351,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <RadioButton
-                android:id="@+id/y9"
+                android:id="@+id/y19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ใช่"/>
             <RadioButton
-                android:id="@+id/n9"
+                android:id="@+id/y29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ไม่ใช่"/>
+            <RadioButton
+                android:id="@+id/y39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ใช่"/>
+            <RadioButton
+                android:id="@+id/y49"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ไม่ใช่"/>
@@ -297,12 +388,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <RadioButton
-                android:id="@+id/y10"
+                android:id="@+id/y110"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ใช่"/>
             <RadioButton
-                android:id="@+id/n10"
+                android:id="@+id/y210"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ไม่ใช่"/>
+            <RadioButton
+                android:id="@+id/y310"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ใช่"/>
+            <RadioButton
+                android:id="@+id/y410"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ไม่ใช่"/>
@@ -312,10 +413,12 @@
                 android:id="@+id/btnform"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="50dp"
                 android:background="#2196F3"
                 android:textSize="20dp"
                 android:layout_marginTop="10dp"
-                android:text="แสดงผล"/>
+                android:text="ตรวจสอบผล"/>
         </LinearLayout>
 
     </ScrollView>

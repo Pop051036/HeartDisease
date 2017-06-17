@@ -10,7 +10,7 @@ import com.google.gson.annotations.SerializedName;
  * Created by Nattapong on 23/5/2560.
  */
 
-public class MapHospitalDataDao implements Parcelable {
+public class MapHospitalDataDao  implements Parcelable{
 
 
         @SerializedName("db_map_id")
@@ -31,28 +31,23 @@ public class MapHospitalDataDao implements Parcelable {
         @SerializedName("db_map_type")
         @Expose
         private String dbMapType;
-    @SerializedName("db_map_description")
+        @SerializedName("db_map_description")
         @Expose
         private String dbMapDescription;
 
+         @SerializedName("db_map_distance")
+        @Expose
+        private int dbMapDistance;
+
     protected MapHospitalDataDao(Parcel in) {
+        dbMapId = in.readInt();
         dbMapName = in.readString();
         dbMapAddress = in.readString();
+        dbMapLat = in.readDouble();
+        dbMapLng = in.readDouble();
         dbMapType = in.readString();
         dbMapDescription = in.readString();
-    }
-
-    @Override
-    public void writeToParcel(Parcel dest, int flags) {
-        dest.writeString(dbMapName);
-        dest.writeString(dbMapAddress);
-        dest.writeString(dbMapType);
-        dest.writeString(dbMapDescription);
-    }
-
-    @Override
-    public int describeContents() {
-        return 0;
+        dbMapDistance = in.readInt();
     }
 
     public static final Creator<MapHospitalDataDao> CREATOR = new Creator<MapHospitalDataDao>() {
@@ -66,6 +61,14 @@ public class MapHospitalDataDao implements Parcelable {
             return new MapHospitalDataDao[size];
         }
     };
+
+    public int getDbMapDistance() {
+        return dbMapDistance;
+    }
+
+    public void setDbMapDistance(int dbMapDistance) {
+        this.dbMapDistance = dbMapDistance;
+    }
 
     public String getDbMapDescription() {
         return dbMapDescription;
@@ -123,4 +126,20 @@ public class MapHospitalDataDao implements Parcelable {
             this.dbMapType = dbMapType;
         }
 
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(dbMapId);
+        dest.writeString(dbMapName);
+        dest.writeString(dbMapAddress);
+        dest.writeDouble(dbMapLat);
+        dest.writeDouble(dbMapLng);
+        dest.writeString(dbMapType);
+        dest.writeString(dbMapDescription);
+        dest.writeInt(dbMapDistance);
+    }
 }

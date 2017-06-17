@@ -34,7 +34,7 @@ public class HttpManager {
                 .create();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.1.101/task_manager/v1/")
+                .baseUrl("http://192.168.137.1/task_manager/v1/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 

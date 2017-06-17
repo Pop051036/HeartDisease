@@ -20,6 +20,10 @@ public class MapHospitalDataCollection implements Parcelable {
     @Expose
     private List<MapHospitalDataDao> data = null;
 
+    public MapHospitalDataCollection(){
+
+    }
+
     protected MapHospitalDataCollection(Parcel in) {
         data = in.createTypedArrayList(MapHospitalDataDao.CREATOR);
     }

@@ -68,7 +68,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                     if (response.isSuccessful()) {
                         dao = response.body();
                         manager.setUser(dao);
-                        startActivity(new Intent(RegisterActivity.this, CommentActivity.class));
+                        startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
                         finish();
                     } else {
                         Log.e("Register", response.errorBody().toString());

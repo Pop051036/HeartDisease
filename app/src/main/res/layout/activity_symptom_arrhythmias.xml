@@ -1,6 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nattapong.heartdisease.activity.FormActivity">
 
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:background="@drawable/text1"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:text="อาการของภาวะหัวใจเต้นผผิดปกติ"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/sym_muscle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E1F5FE"
+        android:ellipsize="end"
+        android:maxLines="30"
+        android:text="@string/sym_arrhyth"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:text="แหล่งที่มา"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#304FFE"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:text="https://www.bangkokhospital.com/hearthospital/th/heart-health-info/heart-disease-and-treatment/75/full_detail/disease"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
 </LinearLayout>

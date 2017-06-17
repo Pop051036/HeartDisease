@@ -1,64 +1,53 @@
 package com.example.nattapong.heartdisease.activity;
 
 import android.os.Bundle;
+import android.support.annotation.IdRes;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 
 import com.example.nattapong.heartdisease.R;
 import com.example.nattapong.heartdisease.adapter.ViewPagerAdapter;
-import com.example.nattapong.heartdisease.fragment.FragmentFoodAthen;
+import com.example.nattapong.heartdisease.fragment.FragmentFood;
 import com.example.nattapong.heartdisease.fragment.FragmentFoodAthey;
 import com.example.nattapong.heartdisease.manager.UserDataLoginManager;
+import com.roughike.bottombar.BottomBar;
+import com.roughike.bottombar.OnTabSelectListener;
 
 
 public class AtherFoodActivity extends AppCompatActivity  {
 
     Toolbar toolbar;
-    TabLayout tabLayout1;
-    ViewPager viewPager1;
-    ViewPagerAdapter viewPagerAdapter1;
-
-
-
-    UserDataLoginManager userDataLoginManager;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food_ather);
-        toolbar = (Toolbar) findViewById(R.id.toolBar);
-        setSupportActionBar(toolbar);
-
-        tabLayout1 = (TabLayout) findViewById(R.id.tabLayout1);
-        viewPager1 = (ViewPager) findViewById(R.id.viewPager1);
-        viewPagerAdapter1 = new ViewPagerAdapter(getSupportFragmentManager());
-        viewPagerAdapter1.addFragments(new FragmentFoodAthey(), "อาหารที่ควรรับประทาน");
-        viewPagerAdapter1.addFragments(new FragmentFoodAthen(), "อาหารที่ไม่ควรรับประทาน");
-        viewPager1.setAdapter(viewPagerAdapter1);
-        tabLayout1.setupWithViewPager(viewPager1);
-
-        userDataLoginManager = new UserDataLoginManager();
-
-
 
         initInstances();
     }
 
     private void initInstances() {
         //ใส่โค้ด
+        toolbar = (Toolbar) findViewById(R.id.toolBar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
        // invalidateOptionsMenu();
 
 
+
     }
 
-
-
-
-
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home){
+            finish();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

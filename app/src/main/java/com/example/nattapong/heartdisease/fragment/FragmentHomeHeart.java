@@ -21,6 +21,7 @@ import com.example.nattapong.heartdisease.activity.CongenitalActivity;
 import com.example.nattapong.heartdisease.activity.FormActivity;
 import com.example.nattapong.heartdisease.activity.MuscleActivity;
 import com.example.nattapong.heartdisease.activity.PericardiumActivity;
+import com.example.nattapong.heartdisease.activity.SampleActivity;
 import com.example.nattapong.heartdisease.activity.ValveActivity;
 
 /**
@@ -35,7 +36,7 @@ public class FragmentHomeHeart extends Fragment {
     private CardView pericardium;
     private CardView congenital;
     private CardView arrhythmias;
-    private Button form;
+    private CardView form;
     public FragmentHomeHeart() {
         super();
     }
@@ -94,13 +95,6 @@ public class FragmentHomeHeart extends Fragment {
                 startActivity(new Intent(getContext(), ValveActivity.class));
             }
         });
-        pericardium = (CardView) rootView.findViewById(R.id.pericardium);
-        pericardium.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getContext(), PericardiumActivity.class));
-            }
-        });
         congenital = (CardView) rootView.findViewById(R.id.congenital);
         congenital.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -115,11 +109,11 @@ public class FragmentHomeHeart extends Fragment {
                 startActivity(new Intent(getContext(), ArrhythmiasActivity.class));
             }
         });
-        form = (Button) rootView.findViewById(R.id.form);
+        form = (CardView) rootView.findViewById(R.id.form);
         form.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getContext(), FormActivity.class));
+                startActivity(new Intent(getContext(), SampleActivity.class));
             }
         });
 

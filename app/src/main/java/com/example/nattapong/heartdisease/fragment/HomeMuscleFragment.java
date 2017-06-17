@@ -73,6 +73,13 @@ public class HomeMuscleFragment extends Fragment implements View.OnClickListener
     private void initInstances(View rootView, Bundle savedInstanceState) {
         // Init 'View' instance(s) with rootView.findViewById here
 
+        VideoView videoview = (VideoView) rootView.findViewById(R.id.videoView);
+
+        Uri uri = Uri.parse("android.resource://" + getActivity().getPackageName() + "/" + R.raw.s21);
+
+        videoview.setVideoURI(uri);
+        videoview.setMediaController(new MediaController(getContext()));
+        videoview.start();
 
     }
 

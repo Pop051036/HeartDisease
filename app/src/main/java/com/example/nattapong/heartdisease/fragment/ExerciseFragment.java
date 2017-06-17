@@ -40,7 +40,7 @@ public class ExerciseFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_exercise_ather, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_exercise, container, false);
         initInstances(rootView, savedInstanceState);
         return rootView;
     }

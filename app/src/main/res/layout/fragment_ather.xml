@@ -7,10 +7,12 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp">
 
+
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_marginBottom="60dp"
         android:layout_height="match_parent" >
+
 
 
         <LinearLayout
@@ -39,24 +41,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
-                android:maxLines="30"
                 android:text="@string/atherosc"
                 android:textColor="#000000"
                 android:textSize="14sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:textStyle="bold"
-                android:text="แหล่งที่มา"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#304FFE"
-                android:textSize="14dp"
-                android:layout_marginTop="5dp"
-                android:ellipsize="end"
-                android:text="http://haamor.com/th/%E0%B9%82%E0%B8%A3%E0%B8%84%E0%B8%AB%E0%B8%B1%E0%B8%A7%E0%B9%83%E0%B8%88/#article102"/>
 
             <!--Put form controls here-->
 

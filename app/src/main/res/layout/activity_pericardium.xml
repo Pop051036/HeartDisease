@@ -29,15 +29,61 @@ android:layout_height="match_parent">
         android:id="@+id/contentContainerPericar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
-
-    <com.roughike.bottombar.BottomBar
-        android:id="@+id/bottomBar2"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_gravity="bottom"
-        app:bb_behavior="shifting|underNavbar"
-        app:bb_tabXmlResource="@xml/bottombar_tabs" />
+        android:layout_marginBottom="0dp"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/text1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:text="\t การออกกำลังกายกับโรคหัวใจ"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/sym_ather"
+                android:layout_width="match_parent"
+                android:layout_height="690dp"
+                android:ellipsize="end"
+                android:maxLines="100"
+                android:background="#E1F5FE"
+                android:text="@string/exercise"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:text="แหล่งที่มา"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#304FFE"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:text="http://haamor.com/th/%E0%B9%82%E0%B8%A3%E0%B8%84%E0%B8%AB%E0%B8%B1%E0%B8%A7%E0%B9%83%E0%B8%88/#article106"/>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
 </android.support.design.widget.CoordinatorLayout>
 
 

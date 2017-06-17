@@ -1,13 +1,22 @@
 package com.example.nattapong.heartdisease.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.nattapong.heartdisease.R;
+import com.example.nattapong.heartdisease.activity.AtherFoodActivity;
+import com.example.nattapong.heartdisease.activity.AtherosclerosisActivity;
+import com.example.nattapong.heartdisease.activity.FormActivity;
+import com.example.nattapong.heartdisease.activity.MuscleActivity;
+import com.example.nattapong.heartdisease.activity.PericardiumActivity;
+import com.example.nattapong.heartdisease.activity.ShowformActivity;
 
 
 /**
@@ -15,6 +24,10 @@ import com.example.nattapong.heartdisease.R;
  */
 @SuppressWarnings("unused")
 public class FragmentTell extends Fragment {
+
+    private CardView food;
+    private CardView exercise;
+
 
     public FragmentTell() {
         super();
@@ -52,6 +65,22 @@ public class FragmentTell extends Fragment {
     @SuppressWarnings("UnusedParameters")
     private void initInstances(View rootView, Bundle savedInstanceState) {
         // Init 'View' instance(s) with rootView.findViewById here
+        food = (CardView) rootView.findViewById(R.id.food);
+        food.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(), AtherFoodActivity.class));
+            }
+
+        });
+        exercise = (CardView) rootView.findViewById(R.id.exercise);
+        exercise.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(), PericardiumActivity.class));
+            }
+
+        });
     }
 
     @Override

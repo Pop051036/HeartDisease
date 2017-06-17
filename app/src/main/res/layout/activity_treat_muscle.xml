@@ -1,11 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nattapong.heartdisease.activity.FormActivity">
 
-    <TextView
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="การรักษา Muscle"/>
+        android:layout_marginBottom="60dp"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:background="@drawable/text1"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:text="รักษาโรคกล้ามเนื้อหัวใจตายเฉียบพลันอย่างไร?"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
 
+            <TextView
+                android:id="@+id/treat_muscle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E1F5FE"
+                android:ellipsize="end"
+                android:maxLines="60"
+                android:text="@string/treat_muscle"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:text="แหล่งที่มา"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#304FFE"
+                android:layout_marginTop="5dp"
+                android:text="http://haamor.com/th/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%99%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%AB%E0%B8%B1%E0%B8%A7%E0%B9%83%E0%B8%88%E0%B8%95%E0%B8%B2%E0%B8%A2/
+"
+                android:ellipsize="end"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
 </LinearLayout>

@@ -19,11 +19,16 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="400dp" />
+
             <TextView
                 android:id="@+id/tvName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="180dp"
+                android:layout_marginTop="50dp"
                 android:ellipsize="end"
                 android:maxLines="1"
                 android:text="รายละเอียด"

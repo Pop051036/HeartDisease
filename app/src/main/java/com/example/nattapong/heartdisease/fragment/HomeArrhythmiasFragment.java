@@ -1,11 +1,14 @@
 package com.example.nattapong.heartdisease.fragment;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.MediaController;
+import android.widget.VideoView;
 
 import com.example.nattapong.heartdisease.R;
 
@@ -52,6 +55,13 @@ public class HomeArrhythmiasFragment extends Fragment {
     @SuppressWarnings("UnusedParameters")
     private void initInstances(View rootView, Bundle savedInstanceState) {
         // Init 'View' instance(s) with rootView.findViewById here
+        VideoView videoview = (VideoView) rootView.findViewById(R.id.videoView);
+
+        Uri uri = Uri.parse("android.resource://" + getActivity().getPackageName() + "/" + R.raw.r4111);
+
+        videoview.setVideoURI(uri);
+        videoview.setMediaController(new MediaController(getContext()));
+        videoview.start();
     }
 
     @Override

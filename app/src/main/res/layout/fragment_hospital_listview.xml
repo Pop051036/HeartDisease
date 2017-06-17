@@ -3,10 +3,34 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp">
+
+        <EditText
+            android:id="@+id/tv_search"
+            android:layout_weight="1"
+            android:hint="ค้นหา..."
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@android:drawable/ic_search_category_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/tv_mapClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ฉุกเฉิน"/>
+    </LinearLayout>
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
+        android:layout_height="match_parent"
+        >
     </android.support.v7.widget.RecyclerView>
 </LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_form"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     tools:context="com.example.nattapong.heartdisease.activity.FormActivity">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvText_sampleData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#01579B"
+                    android:textColor="#FFFFFF"
+                    android:layout_centerVertical="true"
+                    android:text="เพศหญิง อายุมากกว่า55ปี/ 55555555เพศชาย อายุมากกว่า45ปี"
+                    android:textSize="16dp"/>
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E1F5FE">
+                    <RadioButton
+                        android:id="@+id/tvText_sampleO"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:text="ใช่"/>
+                    <RadioButton
+                        android:id="@+id/tvText_sampleT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:text="ไม่ใช่"/>
+                    <RadioButton
+                        android:id="@+id/tvText_sampleTe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:text="ใช่"/>
+                    <RadioButton
+                        android:id="@+id/tvText_sampleF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:text="ไม่ใช่"/>
+                </RadioGroup>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnCheck"
+                android:layout_width="wrap_content"
+                android:text="ตรวจสอบ"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="100dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="15dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:background="@drawable/lal"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

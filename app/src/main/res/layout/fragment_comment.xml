@@ -6,11 +6,13 @@
     android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:paddingTop="16dp">
+    android:paddingTop="16dp"
+    android:background="#000000">
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_marginTop="85dp"
+        android:background="@drawable/mm01"
         android:layout_height="match_parent" >
 
 
@@ -29,31 +31,45 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="5dp"
                     android:text="แสดงความคิดเห็น" />
 
                 <EditText
                     android:id="@+id/EditTextFeedbackBody"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:inputType="textMultiLine"/>
+                    android:inputType="textMultiLine"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ลงชื่อ" />
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="10dp"
+                    android:text="ลงชื่อ"
+                    android:layout_marginStart="5dp"/>
 
                 <EditText
                     android:id="@+id/nameUser"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"/>
 
                 <Button
                     android:id="@+id/ButtonSendFeedback"
+                    android:background="@drawable/lal"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
                     android:layout_marginBottom="24dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="15dp"
+                    android:textSize="18dp"
                     android:onClick="sendFeedback"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
                     android:text="แสดงความคิดเห็น" />
 
 

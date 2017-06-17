@@ -58,49 +58,49 @@ public class FormActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
 
         if (v == btnform) {
-            if (g1.getCheckedRadioButtonId() == R.id.y1) {
-                num = num + 10;
+            if (g1.getCheckedRadioButtonId() == R.id.y11) {
+                num = num + 1;
                 Log.e("FormActivity", num + " num");
             }
-            if (g2.getCheckedRadioButtonId() == R.id.y2) {
-                num = num + 10;
+            if (g2.getCheckedRadioButtonId() == R.id.y12) {
+                num = num + 1;
                 Log.e("num", num + "");
             }
-            if (g3.getCheckedRadioButtonId() == R.id.y3) {
-                num = num + 10;
+            if (g3.getCheckedRadioButtonId() == R.id.y13) {
+                num = num + 1;
                 Log.e("num", num + "");
             }
-            if (g4.getCheckedRadioButtonId() == R.id.y4) {
-                num = num + 10;
+            if (g4.getCheckedRadioButtonId() == R.id.y14) {
+                num = num + 1;
                 Log.e("num", num + "");
             }
-            if (g5.getCheckedRadioButtonId() == R.id.y5) {
-                num = num + 10;
+            if (g5.getCheckedRadioButtonId() == R.id.y15) {
+                num = num + 1;
                 Log.e("num", num + "");
             }
-            if (g6.getCheckedRadioButtonId() == R.id.y6) {
-                num = num + 10;
+            if (g6.getCheckedRadioButtonId() == R.id.y16) {
+                num = num + 1;
                 Log.e("num", num + "");
             }
-            if (g7.getCheckedRadioButtonId() == R.id.y7) {
-                num = num + 10;
+            if (g7.getCheckedRadioButtonId() == R.id.y17) {
+                num = num + 1;
                 Log.e("num", num + "");
             }
-            if (g8.getCheckedRadioButtonId() == R.id.y8) {
-                num = num + 10;
+            if (g8.getCheckedRadioButtonId() == R.id.y18) {
+                num = num + 1;
                 Log.e("num", num + "");
             }
-            if (g9.getCheckedRadioButtonId() == R.id.y9) {
-                num = num + 10;
+            if (g9.getCheckedRadioButtonId() == R.id.y19) {
+                num = num + 1;
                 Log.e("num", num + "");
             }
-            if (g10.getCheckedRadioButtonId() == R.id.y10) {
-                num = num + 10;
+            if (g10.getCheckedRadioButtonId() == R.id.y110) {
+                num = num + 1;
                 Log.e("num", num + "");
             }
 
 
-            Intent intent = new Intent(this, ShowformActivity.class);
+            Intent intent = new Intent(FormActivity.this, ShowformActivity.class);
             intent.putExtra("num", num);
             startActivity(intent);
             finish();

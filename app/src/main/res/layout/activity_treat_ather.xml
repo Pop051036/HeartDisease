@@ -8,24 +8,33 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     >
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
     <TextView
         android:id="@+id/tvName"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="22dp"
         android:layout_marginTop="20dp"
-        android:background="#757575"
+        android:background="@drawable/text1"
         android:ellipsize="end"
         android:maxLines="2"
         android:textStyle="bold"
-        android:text="\t การรักษาโรคหลอดเลือดหัวใจ"
-        android:textColor="#000000"
+        android:text="การรักษาโรคหลอดเลือดหัวใจ"
+        android:textColor="#FFFFFF"
         android:textSize="16sp" />
 
     <TextView
         android:id="@+id/treat_ath"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#E1F5FE"
         android:ellipsize="end"
         android:maxLines="30"
         android:text="@string/treat_ath"
@@ -49,4 +58,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/ajob"/>
+            </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
 </LinearLayout>
